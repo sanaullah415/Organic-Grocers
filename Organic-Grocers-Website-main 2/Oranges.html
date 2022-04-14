@@ -1,0 +1,202 @@
+<html>
+    <link rel="stylesheet" href="http://static.sasongsmat.nu/fonts/vegetarian.css" />
+    <meta charset="UTF-8">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <head>
+        <title>
+            Oranges
+        </title>
+        <style>
+            /* Basic Styling */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+ 
+.container1 {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0px;
+  display: flex;
+  
+}
+/* Columns */
+.left-column {
+    margin-top: 70px;
+    margin-right: 30px;
+  width: 55%;
+  position: relative;
+}
+ 
+.right-column {
+  width: 45%;
+  margin-top: 80px;
+}
+/* Left Column */
+.left-column img {
+  width: 85%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+ 
+.left-column img.active {
+  opacity: 1;
+}
+/* Product Description */
+.product-description {
+  border-bottom: 1px solid #E1E8EE;
+  margin-bottom: 20px;
+}
+.product-description span {
+  font-size: 16px;
+  color: #358ED7;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.product-description h1{
+  font-weight: 300;
+  font-size: 40px;
+  color: #43484D;
+  letter-spacing: -2px;
+}
+  .product-description h2{
+  font-weight: 100;
+  font-size: 28px;
+  color: #43484D;
+  letter-spacing: -2px;
+}
+.product-description h3{
+  font-weight: 100;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #43484D;
+  letter-spacing: -1px;
+}
+.product-description p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #86939E;
+  line-height: 24px;
+}
+
+
+/* Product Price */
+.product-price {
+  display: flex;
+  align-items: center;
+}
+ 
+.product-price span {
+  font-size: 26px;
+  font-weight: 300;
+  color: #43474D;
+  margin-right: 20px;
+}
+
+ 
+.cart-btn {
+  display: inline-block;
+  background-color: #7DC855;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 12px 30px;
+  transition: all .5s;
+}
+.cart-btn:hover {
+  background-color: #64af3d;
+}
+
+        </style>
+    </head>
+    <body>
+
+        <header class="text-gray-600 body-font">
+            <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+              <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+              <div class="" style="width: 70px;">
+                <img src= "https://docs.google.com/uc?id=1ECRBLiUIHo6S77OllKmOIuuMwwaKOIlf">
+              </div>
+                <span class="ml-3 text-xl">Organic Grocers</span>
+              </a>
+              <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+                <a href="Homepage.html" class="mr-7 hover:text-gray-900" target="_blank"><b>Home</b></a>                <a class="mr-7 hover:text-gray-900"><b>About us</b></a>
+                <a class="mr-7 hover:text-gray-900"><b>On Sale</b></a>
+                <a class="mr-7 hover:text-gray-900"><b>Blog</b></a>
+                <a class="mr-7 hover:text-gray-900"><b>Contact</b></a>
+              </nav>
+              <div class="shadow flex">
+                <input class="inline-flex w-full rounded p-1" type="text" placeholder="Search...">
+                <button class="bg-white w-auto flex justify-end items-center text-blue-500 p-2 hover:text-blue-400 ">
+                    <i class="material-icons text-sm"> Search</i>
+                </button>
+          </div>
+          <a href="/Users/mohammedfaiz/Desktop/website/login.html">
+            <button  class=" inline-flex items-center bg-gray-100 border-0 py-1 px-5 focus:outline-none hover:bg-gray-200 rounded text-base ml-2 mt-3 md:mt-2">LOG IN
+                  </button> </a>
+          <a href="/Users/mohammedfaiz/Desktop/website/Register.html">
+                  <button class=" inline-flex items-center bg-gray-100 border-0 py-1 px-5 focus:outline-none hover:bg-gray-200 rounded text-base ml-2 mt-3 md:mt-2">SIGN UP
+                  </button> </a>
+                  <li class="font-sans block mt-4 lg:inline-block lg:mt-1 lg:ml-2 align-middle text-black hover:text-gray-700">
+                    <a href="#" role="button" class="relative flex">
+                      <svg class="flex-1 w-8 h-7 fill-current" viewbox="0 0 22 22">
+                        <path d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z"/>
+                        </svg>
+                        <span class="absolute right-0 top-0 rounded-full bg-red-600 w-4 h-4 top right p-0 m-0 text-white font-mono text-sm  leading-tight text-center">0
+                      </span>
+                    </a>
+                  </li>
+    
+              </div>
+	
+        <main class="container1">
+ 
+            <!-- Left Column / Image -->
+            <div class="left-column">
+              
+              <img data-image="red" class="active" src="https://docs.google.com/uc?id=1WW9KzMs7r8ZwdtAEeZr8wXfwi9mwC6jX" alt="">
+            </div>
+           
+           
+            <!-- Right Column -->
+            <div class="right-column">
+           
+              <!-- Product Description -->
+              <div class="product-description">
+                <h1>Oranges (2 Kgs ) </h1>
+                <br>
+                
+               
+                <span>M.R.P.: ₹<s> 260</s> <b>Price: ₹ 220.00</b></span>
+                    <h3>You Save: <b>₹ 40.00</b>  Inclusive of all taxes </h3>
+                
+                <p style= "color:green; font-size: 20px;"> <b> In Stock </b></p>
+                <br>
+                <p style="color: black; font-family: Arial, Helvetica, sans-serif; font-size: 16px;"> <span class="veg-indian-vegetarian"></span>  This is a <b>Vegetarian </b>product</p>
+            
+            </div>
+            
+              <p style="font-size: 18px;"> <b>About this item:</b> <p>
+              <ul style="font-family: Arial, Helvetica, sans-serif; font-weight: 100;">
+                <li style="font-size: 16px;"> 1.100% Organic </li> 
+                <li style="font-size: 16px;"> 2.It is rich in Vitamic C that prevents Cancer, Diabetes and Heart diseases </li>
+                <li style="font-size: 16px;"> 3.It comes from the Citrus family that is low on Calories and is highly nutritious </li>
+              </ul>
+            
+              <br>
+              <!-- Product Pricing -->
+              <div class="product-price">
+                <span>₹ 220.00</span>
+                <a href="#" class="cart-btn">Add to cart</a>
+              </div>
+            </div>
+          </main>
+    </body>
+</html>

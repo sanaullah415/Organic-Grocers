@@ -1,0 +1,158 @@
+<html>
+    <link rel="stylesheet" href="http://static.sasongsmat.nu/fonts/vegetarian.css" />
+
+    <head>
+        <title>
+            Mirchi Powder
+        </title>
+        <style>
+            /* Basic Styling */
+html,body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+ 
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0px;
+  display: flex;
+  
+}
+/* Columns */
+.left-column {
+    margin-top: 70px;
+    margin-right: 50px;
+  width: 65%;
+  position: relative;
+}
+ 
+.right-column {
+  width: 35%;
+  margin-top: 80px;
+}
+/* Left Column */
+.left-column img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+ 
+.left-column img.active {
+  opacity: 1;
+}
+/* Product Description */
+.product-description {
+  border-bottom: 1px solid #E1E8EE;
+  margin-bottom: 20px;
+}
+.product-description span {
+  font-size: 16px;
+  color: #358ED7;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.product-description h1{
+  font-weight: 300;
+  font-size: 40px;
+  color: #43484D;
+  letter-spacing: -2px;
+}
+  .product-description h2{
+  font-weight: 100;
+  font-size: 28px;
+  color: #43484D;
+  letter-spacing: -2px;
+}
+.product-description h3{
+  font-weight: 100;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #43484D;
+  letter-spacing: -2px;
+}
+.product-description p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #86939E;
+  line-height: 24px;
+}
+
+
+/* Product Price */
+.product-price {
+  display: flex;
+  align-items: center;
+}
+ 
+.product-price span {
+  font-size: 26px;
+  font-weight: 300;
+  color: #43474D;
+  margin-right: 20px;
+}
+
+ 
+.cart-btn {
+  display: inline-block;
+  background-color: #7DC855;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 12px 30px;
+  transition: all .5s;
+}
+.cart-btn:hover {
+  background-color: #64af3d;
+}
+
+        </style>
+    </head>
+    <body>
+	
+        <main class="container">
+ 
+            <!-- Left Column / Headphones Image -->
+            <div class="left-column">
+              
+              <img data-image="red" class="active" src="https://docs.google.com/uc?id=13uSbZ9jGOl2A_Ete6ON8xhLuNSkgZrAt" alt="">
+            </div>
+           
+           
+            <!-- Right Column -->
+            <div class="right-column">
+           
+              <!-- Product Description -->
+              <div class="product-description">
+                <h1>Mirchi Powder </h1>
+                <h2>(1 kg )</h2>
+                <span>M.R.P.: ₹<s> 200</s> <b>Price: ₹ 150.00</span>
+                    <h3>You Save: <b> ₹ 50.00 </b> Inclusive of all taxes </h3>
+                
+                <p style= "color:green; font-size: 20px;"> <b> In Stock </b></p>
+                <p style="color: black; font-family: Arial, Helvetica, sans-serif; font-size: 16px;"> <span class="veg-indian-vegetarian"></span>  This is a <b>Vegetarian </b>product</p>
+            
+            </div>
+              <h3>About this item: </h3>
+              <ul style="font-family: Arial, Helvetica, sans-serif; font-weight: 100;">
+                <li style="font-size: 17px;"> 100% Organic </li> 
+                <li style="font-size: 17px;"> Gives Reddish colour </li>
+                <li style="font-size: 17px;"> It is used to add heat or spice to dishes </li>
+              </ul>
+              <br>
+              <!-- Product Pricing -->
+              <div class="product-price">
+                <span>₹ 150.00</span>
+                <a href="#" class="cart-btn">Add to cart</a>
+              </div>
+            </div>
+          </main>
+    </body>
+</html>
